@@ -1,0 +1,8 @@
+# Word2Vec
+La incrustación de palabras es una técnica de modelado lingüístico que se utiliza para asignar palabras a vectores de números reales. Representa palabras o frases en un espacio vectorial de varias dimensiones. Las incrustaciones de palabras pueden generarse mediante diversos métodos, como redes neuronales, matrices de co-ocurrencia, modelos probabilísticos, etc. Word2Vec consta de modelos para generar incrustaciones de palabras. Estos modelos son redes neuronales superficiales de dos capas que tienen una capa de entrada, una capa oculta y una capa de salida. Word2Vec utiliza dos arquitecturas:
+
+* CBOW (Bolsa continua de palabras): El modelo CBOW predice la palabra actual dadas las palabras de contexto dentro de una ventana específica. La capa de entrada contiene las palabras del contexto y la capa de salida contiene la palabra actual. La capa oculta contiene el número de dimensiones en las que queremos representar la palabra actual presente en la capa de salida.
+
+* Omitir gramática : El salto gramatical predice las palabras del contexto circundante dentro de una ventana específica dada la palabra actual. La capa de entrada contiene la palabra actual y la capa de salida contiene las palabras contextuales. La capa oculta contiene el número de dimensiones en las que queremos representar la palabra actual presente en la capa de entrada.
+
+The basic idea of word embedding is words that occur in similar context tend to be closer to each other in vector space 
